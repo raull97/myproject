@@ -35,10 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'todo',
-    'manage',
-    'models',
-    'crispy-forms',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,9 +43,21 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'todo',
+    'crispy-forms',
+    'manage',
+    'models',
+    'admin',
     'apps',
-    'views',
+    'base',
     'forms',
+    'home',
+    'index',
+    'login',
+    'models',
+    'signup',
+    'tests',
+    'views',
 ]
 
 MIDDLEWARE = [
