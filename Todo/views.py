@@ -1,4 +1,5 @@
 from django.contrib.auth import login, authenticate
+from django.http.response import Http404
 from django.shortcuts import render, redirect
 
 from .forms import SignUpForm
@@ -17,3 +18,15 @@ def signup(request):
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
+
+def login_view(request):
+    raise Http404("Not implemented")
+
+def logout_view(request):
+    raise Http404("Not implemented")
+
+def homepage(request):
+    return render(request, "index.html", {})
+
+
+
